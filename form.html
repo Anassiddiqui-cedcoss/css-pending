@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+        *{
+            background-color: burlywood;
+    
+        }
+        th{
+            text-align: left;
+        }
+        input{
+          background-color: white;
+        }
+        textarea{
+          background-color: white;
+        }
+        button{
+          background-color: aqua;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>KM custom HTML form Example Using Applescript</h1>
+    <table border=1>
+      <form action="">
+        <tr style="border-style: solid ; border-width: 1px ;">
+          <th>NAME:</th>
+          <td>
+            <form><input type="text" /></form>
+          </td>
+        </tr>
+        <tr>
+          <th>E-MAIL:</th>
+          <td>
+            <form><input type="email" /></form>
+          </td>
+        </tr>
+        <tr>
+          <th>PASSWORD:</th>
+          <td>
+            <form><input type="password" /></form>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            APPROVAL REQUIRED:
+            <br />
+          </th>
+          <td>
+            <form>
+              <input type="checkbox" />
+              Do You Approve ?
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <th>PICK YOUR FAVOURITE:</th>
+          <td>
+            <input type="radio" id="choice1" name="age" value="30" />
+            <label for="age1">choice1</label>
+            <br />
+            <input type="radio" id="choice2" name="age" value="60" />
+            <label for="age2">choice2</label>
+            <br />
+            <input type="radio" id="choice3" name="age" value="100" />
+            <label for="age3">choice3</label>
+            <br />
+          </td>
+        </tr>
+        <tr>
+            <th>POPUP MENU:</th>
+            <td>
+              <label for=""></label>
+              <select name="popup" id="popup">
+              <option value="a">texas--tx</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>LIST:</th>
+            <td>
+                <label for=""></label>
+                <select id="country" name="country">
+                  <option value="australia">california--CA</option>
+                  <option value="canada">new york</option>
+                  <option value="usa">USA</option>
+                </select>
+            </td>
+          </tr>
+          <tr>
+            <th>field ignored by KM:</th>
+            <td>
+              <form><input type="text" /></form>
+            </td>
+          </tr>
+          <tr>
+            <th>TEXT AREA:</th>
+            <td>
+              <form><textarea name="" id="" cols="30" rows="10"></textarea></form>
+            </td>
+          </tr>
+      </form>
+    </table>
+    <button>save</button><button>cancel</button><button>resize</button>
+  </body>
+</html>
